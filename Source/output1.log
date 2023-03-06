@@ -1,0 +1,43 @@
+2023-03-06 00:59:48.129283: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-06 00:59:49.329178: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /data/s2896370/envs/thesis1/lib/python3.10/site-packages/cv2/../../../../lib:/usr/local/cuda-11.2/lib64:/data/s2896370/envs/thesis1/lib/
+2023-03-06 00:59:49.329340: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /data/s2896370/envs/thesis1/lib/python3.10/site-packages/cv2/../../../../lib:/usr/local/cuda-11.2/lib64:/data/s2896370/envs/thesis1/lib/
+2023-03-06 00:59:49.329359: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-03-06 00:59:50.300838: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-06 00:59:51.212785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 5354 MB memory:  -> device: 0, name: GeForce GTX 980 Ti, pci bus id: 0000:08:00.0, compute capability: 5.2
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 62, 62, 16)        448       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 31, 31, 16)       0         
+ )                                                               
+                                                                 
+ conv2d_1 (Conv2D)           (None, 29, 29, 32)        4640      
+                                                                 
+ max_pooling2d_1 (MaxPooling  (None, 14, 14, 32)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_2 (Conv2D)           (None, 12, 12, 64)        18496     
+                                                                 
+ max_pooling2d_2 (MaxPooling  (None, 6, 6, 64)         0         
+ 2D)                                                             
+                                                                 
+ flatten (Flatten)           (None, 2304)              0         
+                                                                 
+ dense (Dense)               (None, 512)               1180160   
+                                                                 
+ dense_1 (Dense)             (None, 1)                 513       
+                                                                 
+=================================================================
+Total params: 1,204,257
+Trainable params: 1,204,257
+Non-trainable params: 0
+_________________________________________________________________
+2023-03-06 00:59:54.529169: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:428] Loaded cuDNN version 8100
+1/1 [==============================] - ETA: 0s1/1 [==============================] - 0s 194ms/step
+[[9.9653625e-01]
+ [5.1129548e-05]]
+[1. 0.]
