@@ -20,6 +20,6 @@ on patches of the entire area satellite picture, we introduce a novel![mnv_org_3
 (Flash Score Heatmap). For the entire satellite picture, FlaSH achieves an AUC score of
 0.96, demonstrating its ability to precisely nowcast lightning.
 
-(https://github.com/omid-Tajalizadeh/Lightning-Prediction-with-Goes-16/assets/70762131/22ef1976-eca5-478f-937b-79f8c5c9de9b)
+![alt text](https://github.com/omid-Tajalizadeh/Lightning-Prediction-with-Goes-16/assets/70762131/22ef1976-eca5-478f-937b-79f8c5c9de9b)
 
 
